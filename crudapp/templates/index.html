@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Books</title>
+</head>
+<body>
+{% block content %}
+
+         {% for book in books %}
+                <p>{{ book.name }}</p>
+            {% endfor %}
+        {% endblock %}
+
+</body>
+</html>
